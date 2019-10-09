@@ -1,0 +1,12 @@
+div {
+  background-color: lightgrey;
+  width: 1100px;
+  height: 500px;
+  padding: 25px;
+  margin: 20px;
+}
+img {
+     float:left;
+    padding: 10px;
+ }
+ 
