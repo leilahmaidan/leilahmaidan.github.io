@@ -4,19 +4,11 @@
 
 .masthead-avatar {
 	width: 20rem !important;
-	height: 20rem;
-	border-radius: 10rem;
-	object-fit: cover;
-	object-position: top;
 }
 
 @media (max-width: 768px) {
 	.masthead-avatar {
 		width: 15rem !important;
-		height: 15rem;
-		border-radius: 7.5rem;
-		object-fit: cover;
-		object-position: top;
 	}	
 }
 
