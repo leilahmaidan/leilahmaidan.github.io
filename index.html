@@ -1,116 +1,153 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
 
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-<style>
+  <style>
+    div {
+      background-color: #F0F0F0;
+      width: 90%;
+      padding: 25px;
+      margin: 20px;
+    }
 
+    #graph1 {
+      background-color: white;
+    }
 
+    img {
+      /*float:left;*/
+      display: inline;
+      padding: 10px;
+    }
 
-div {
-  background-color: #F0F0F0;
-  width: 90%;
-  padding: 25px;
-  margin: 20px;
-}
+    h1,
+    h2,
+    h3 {
+      padding-left: 25px;
+    }
 
-#graph1 {
-	background-color: white;
-}
+    h1 {
+      font-family: arial;
+      font-weight: bold;
+    }
 
-img {
-     /*float:left;*/
-    display:inline;
-    padding: 10px;
- }
+    h2 {
+      font-family: arial;
+    }
 
- h1, h2, h3 { 
-padding-left: 25px;
-  }
+    #armygreen {
+      color: #52896A;
+    }
 
-  h1 {font-family: arial;
-  	font-weight: bold;
-  }
-  h2 {font-family: arial;
-  }
+    .imagesp2 img {
+      width: 30%;
+    }
 
-  #armygreen{
-  	color: #52896A;
-  }
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 80%;
+      /*  margin-left: 25px;*/
+      margin: auto;
+    }
 
-.imagesp2 img{
-width: 30%; 
-}
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
 
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 80%;
-/*  margin-left: 25px;*/
-margin:auto;
-}
+    #table1 {
+      background-color: #fff;
+    }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-#table1 {
-	background-color: #fff;}
-
-#table1	tr:nth-child(even) {
-  background-color: #dddddd;
-}
-
-
-
-</style>
+    #table1 tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
 </head>
+
 <body>
 
-<h1 style="color:#FF8C00;"> Brooklyn’s Price Tag for Gentrification </h1>
-<h4 style="color:#888888; padding-left: 40px"> By Leila Hmaidan</h4>
+  <h1 style="color:#FF8C00;"> Brooklyn’s Price Tag for Gentrification </h1>
+  <h4 style="color:#888888; padding-left: 40px"> By Leila Hmaidan</h4>
 
 
-<div><img id="girl" src="img/DB.jpg" alt="Refugee girl" style="float: left; width=27%; padding-right: 20px;" >
-<p> For the past few years Brooklyn has witnessed the widely known process of gentrification. The development, which is defined as a process of changing the character of a neighborhood through the influx of more affluent residents and businesses, has impacted some parts of Brooklyn more than others. Districts closest to Manhattan demonstrated the highest average pricing for property values. A large majority of home owners in those areas are a demographic reflective of younger families that moved into the neighbourhood within the last 10 years.    
-</p>
-<p> While an increase in housing value, population and new business is often seen as good news for many in the neighborhood, others raise concerns over those from lower income groups that may be left behind due to the rising prices in rents, goods and services.
-</p>
-<p> <iframe width="90%" height="520" frameborder="0" src="https://leilahmaidan.carto.com/builder/53d69801-5c87-450b-b6a6-356db380f768/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-</p> 
+  <div><img id="girl" src="img/DB.jpg" alt="Refugee girl" style="float: left; width=27%; padding-right: 20px;">
+    <p> For the past few years Brooklyn has witnessed the widely known process of gentrification. The development, which
+      is defined as a process of changing the character of a neighborhood through the influx of more affluent residents
+      and businesses, has impacted some parts of Brooklyn more than others. Districts closest to Manhattan demonstrated
+      the highest average pricing for property values. A large majority of home owners in those areas are a demographic
+      reflective of younger families that moved into the neighbourhood within the last 10 years.
+    </p>
+    <p> While an increase in housing value, population and new business is often seen as good news for many in the
+      neighborhood, others raise concerns over those from lower income groups that may be left behind due to the rising
+      prices in rents, goods and services.
+    </p>
+    <p> <iframe width="90%" height="520" frameborder="0"
+        src="https://leilahmaidan.carto.com/builder/53d69801-5c87-450b-b6a6-356db380f768/embed" allowfullscreen
+        webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+    </p>
 
 
-<h2 style="color:#FFA500;" >Below is the list of zip codes with the highest property values </h2>
- 
-<ol>
-  <li>11201</li>
-  <li>11231</li>
-  <li>11215</li>
-  <li>11232</li>
-</ol> 
+    <h2 style="color:#FFA500;">Below is the list of zip codes with the highest property values </h2>
 
-</div>
-<p style="padding-left: 60px; padding-right: 60px"> Tania Lopez, deputy press secretary for the Office of the State Comptroller was asked to weigh in on the varying trends, she said, “property values in Brooklyn increased considerably since the end of the recession, particularly in high-demand neighborhoods, such as DUMBO, Park Slope, Williamsburg and Greenpoint.” 
-</p>
-<p style="padding-left: 60px; padding-right: 60px"> Glomani Bravo-Lopez, deputy chief of staff for Council Member Stephen Levin also had input about the rising housing market in some areas of Brooklyn. Glomani reiterated that the high prices were not reflective of all of Brooklyn but only areas closer to the city and that surrounded the district's tech hubs. He said, “the $1.2 million median sale price is over Brooklyn’s median of $575k sale price. Brooklyn Heights, has a median sale price of $925,000, and Vinegar Hill’s is $1.7 M. As far as looking at these adjacent neighborhoods, and the fact that waterfront property with views of the Manhattan skyline (and proximity to Manhattan) goes for a premium, I think this says it all. There is of course the proximity to the City (Manhattan) and the various modes of transportation and variety of subway lines – and now NYC Ferry as well. When it comes to the real estate market in New York City, every block makes a significant difference in perceived value and price. Finally, it bears mentioning that DUMBO is hot right now. As part of the Brooklyn Tech Triangle (which also includes Downtown Brooklyn and the Brooklyn Navy Yard), it is home to many tech companies.”
-	</p>
-	<p style="padding-left: 60px; padding-right: 60px"> Overall, Brooklyn expereinced an approximate population growth of 6% witninh the past seven year alone </p>
-<div align="center" id="graph1">
-<iframe title="Brooklyn Population&amp;nbsp;" aria-label="Interactive line chart" id="datawrapper-chart-zslA6" src="https://datawrapper.dwcdn.net/zslA6/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 80% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
-</div>
+    <ol>
+      <li>11201</li>
+      <li>11231</li>
+      <li>11215</li>
+      <li>11232</li>
+    </ol>
 
-<div>
-<p>A new report from the Center for an Urban Future (CUF), a think tank, backs up Glomani’s claim. The report confirms Dumbo is second in the country for start-up growth, rivaling San Francisco. Between 2008 to 2018, startups in Brooklyn increased by 356%, or from 264 to 1205 startups. A large majority of those being within Dumbo. The district is part of what is known as the Brooklyn Tech Triangle, which also includes Downtown Brooklyn and the Navy Yard. It was during that peak that the surrouding areas began to experience an influx of new residential developments.</p>
-<p>A root contributor of this growth is attributed to a decision made in 2011, when a city-sponsored
-business incubator that supports technology startups, announced it would dedicate 6,440-square-
-foot of space to support new businesses. The space, located in Dumbo, provides offices at an
-affordable, subsidized rate of $3.50 per square foot. </p> 
-<p>While the economic boom in the area has benefited many businesses, homeowners, and created jobs, public housing run by NYCHA remains in the area. Within Vinegar Hill alone, three NYCHA facilities including Farragut Community Center, Ingersoll and Whitman, all house more than thousands of residents. Those residents now find themselves surrounded by businesses that are overwhelmingly unaffordable. While some rental residents that have lived in the area for decades, founds themselves moving further east towards the outer layers of Brooklyn.</p>
-</div>
+  </div>
+  <p style="padding-left: 60px; padding-right: 60px"> Tania Lopez, deputy press secretary for the Office of the State
+    Comptroller was asked to weigh in on the varying trends, she said, “property values in Brooklyn increased
+    considerably since the end of the recession, particularly in high-demand neighborhoods, such as DUMBO, Park Slope,
+    Williamsburg and Greenpoint.”
+  </p>
+  <p style="padding-left: 60px; padding-right: 60px"> Glomani Bravo-Lopez, deputy chief of staff for Council Member
+    Stephen Levin also had input about the rising housing market in some areas of Brooklyn. Glomani reiterated that the
+    high prices were not reflective of all of Brooklyn but only areas closer to the city and that surrounded the
+    district's tech hubs. He said, “the $1.2 million median sale price is over Brooklyn’s median of $575k sale price.
+    Brooklyn Heights, has a median sale price of $925,000, and Vinegar Hill’s is $1.7 M. As far as looking at these
+    adjacent neighborhoods, and the fact that waterfront property with views of the Manhattan skyline (and proximity to
+    Manhattan) goes for a premium, I think this says it all. There is of course the proximity to the City (Manhattan)
+    and the various modes of transportation and variety of subway lines – and now NYC Ferry as well. When it comes to
+    the real estate market in New York City, every block makes a significant difference in perceived value and price.
+    Finally, it bears mentioning that DUMBO is hot right now. As part of the Brooklyn Tech Triangle (which also includes
+    Downtown Brooklyn and the Brooklyn Navy Yard), it is home to many tech companies.”
+  </p>
+  <p style="padding-left: 60px; padding-right: 60px"> Overall, Brooklyn expereinced an approximate population growth of
+    6% witninh the past seven year alone </p>
+  <div align="center" id="graph1">
+    <iframe title="Brooklyn Population&amp;nbsp;" aria-label="Interactive line chart" id="datawrapper-chart-zslA6"
+      src="https://datawrapper.dwcdn.net/zslA6/1/" scrolling="no" frameborder="0"
+      style="width: 0; min-width: 80% !important; border: none;" height="400"></iframe>
+    <script
+      type="text/javascript">!function () { "use strict"; window.addEventListener("message", function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } }) }();</script>
+  </div>
+
+  <div>
+    <p>A new report from the Center for an Urban Future (CUF), a think tank, backs up Glomani’s claim. The report
+      confirms Dumbo is second in the country for start-up growth, rivaling San Francisco. Between 2008 to 2018,
+      startups in Brooklyn increased by 356%, or from 264 to 1205 startups. A large majority of those being within
+      Dumbo. The district is part of what is known as the Brooklyn Tech Triangle, which also includes Downtown Brooklyn
+      and the Navy Yard. It was during that peak that the surrouding areas began to experience an influx of new
+      residential developments.</p>
+    <p>A root contributor of this growth is attributed to a decision made in 2011, when a city-sponsored
+      business incubator that supports technology startups, announced it would dedicate 6,440-square-
+      foot of space to support new businesses. The space, located in Dumbo, provides offices at an
+      affordable, subsidized rate of $3.50 per square foot. </p>
+    <p>While the economic boom in the area has benefited many businesses, homeowners, and created jobs, public housing
+      run by NYCHA remains in the area. Within Vinegar Hill alone, three NYCHA facilities including Farragut Community
+      Center, Ingersoll and Whitman, all house more than thousands of residents. Those residents now find themselves
+      surrounded by businesses that are overwhelmingly unaffordable. While some rental residents that have lived in the
+      area for decades, founds themselves moving further east towards the outer layers of Brooklyn.</p>
+  </div>
 
 
 
