@@ -172,7 +172,7 @@ $(function(){
             event.preventDefault();
             $('html, body').animate({
               scrollTop: target.offset().top
-            }, speed / 2);
+            }, speed);
           }
         }
     });
