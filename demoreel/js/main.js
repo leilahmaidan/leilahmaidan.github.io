@@ -24,7 +24,7 @@ $(function(){
 --------------------------------------------------*/
 
     allWindow.on("load", function() {
-        $('.loader-con').fadeOut('slow');
+        $('.loader-con').fadeOut('fast');
     });
 
 
