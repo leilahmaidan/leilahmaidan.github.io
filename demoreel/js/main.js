@@ -160,6 +160,13 @@ $(function(){
     // Select all links with hashes
     $('a.scroll').on('click', function(event) {
         // On-page links
+        var parent = $(this).parent();
+        $(this).addClass('active')
+        
+        parent.siblings().each(function(){
+          $(this).find('a').removeClass('active')
+        })
+        
         if ( location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname ) {
           // Figure out element to scroll to
           var target = $(this.hash),
@@ -181,7 +188,7 @@ $(function(){
       e.preventDefault();
       $('html, body').animate({
         scrollTop: 0
-      }, 900);
+      }, 300);
     });
     
 
@@ -210,31 +217,32 @@ $(function(){
         navList = navBar.find("ul.navbar-nav");
 
     // Define ChangeClass Function
-    function ChangeClass() {
+    // function ChangeClass() {
 
-      top = allWindow.scrollTop();
+    //   top = allWindow.scrollTop();
 
-        $.each(sections, function(i,val) {
+    //     $.each(sections, function(i,val) {
 
-          var section = $(this),
-              section_top = section.offset().top - 10,
-              bottom = section_top + section.height();
+    //       var section = $(this),
+    //           section_top = section.offset().top - 10,
+    //           bottom = section_top + section.height();
+    //         // console.log(top)
+    //         if (top >= section_top && top <= bottom) {
 
-            if (top >= section_top && top <= bottom) {
+    //           var naItems = navList.find('li');
 
-              var naItems = navList.find('li');
+    //           $.each(naItems ,function(i,val) {
+    //             var item = $(this);
+    //             item.find("a").removeClass("active");
+    //           });
 
-              $.each(naItems ,function(i,val) {
-                var item = $(this);
-                item.find("a").removeClass("active");
-              });
+    //           // console.log(section.attr('id'))
+    //           navList.find('li [href="#' + section.attr('id') + '"]').addClass('active');
+    //         }
 
-              navList.find('li [href="#' + section.attr('id') + '"]').addClass('active');
-            }
+    //     });
 
-        });
-
-    } // End of ChangeClass Function
+    // } // End of ChangeClass Function
 
 
 /*---------------------------------------------------
@@ -307,8 +315,8 @@ $(function(){
 
     function scrollFunctions() {
       stikyNav();
-      ChangeClass();
-      parallax();
+      // ChangeClass();
+      // parallax();
       progressFunction();
     }
 
