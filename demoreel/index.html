@@ -1,201 +1,360 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Portfolio - Laila Maiden</title>
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-	<link href="css/main.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV="CONTENT-LANGUAGE" CONTENT="en-US">
+    <meta name="description" content="Laila Maiden Biography Website">
+    <meta name="author" content="Laila Maiden">
+    <META NAME="COPYRIGHT" CONTENT="&copy; Laila Maiden 2020">
+    <meta http-equiv="Cache-control" content="public">
+    <meta http-equiv="expires" content="86400" />
+    <meta name="robots" content="index" />
+    <title>Laila Maiden</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/style.min.css">
 </head>
 
-<body id="page-top">
+<body>
 
-  <header class="masthead bg-secondary text-white text-center">
-    <div class="container d-flex align-items-center flex-column">
-
-      <img class="masthead-avatar mb-5" src="img/headshot3.jpg" alt="">
-
-      <h1 class="masthead-heading mb-0">Laila Maiden</h1>
-
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
+    <!-- preloader -->
+    <div id="loading">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-      <p class="masthead-subheading font-weight-light text-left mb-2">Laila is a journalist who holds an extensive background in foreign policy and international relations. Her most recent work involved monitoring nuclear weapons negotiations and intergovernmental discussions on the weaponization of space and dual-purpose technology.</p>
-      <p class="masthead-subheading font-weight-light text-left mb-0">She is currently studying at the Craig Newmark Graduate School of Journalism where she is both specializing in economics and business reporting and training to cover the upcoming 2020 presidential elections.</p>
-
     </div>
-  </header>
 
-  <section class="page-section portfolio" id="portfolio">
-    <div class="container">
+    <div id="site-container" class="d-none">
+        <header>
+            <!-- navbar goes here -->
+            <nav id="navbar" class="w-100 section-padding d-lg-flex-sm-block justify-between light-color-bg">
+                <div class="responsive-wrapper d-flex-row justify-between">
+                    <a href="#about" class="logo-wrapper">
+                        <picture>
+                            <source media="(min-width:1681px)" srcset="./assets/images/logo/logo-630.png">
+                            <source media="(min-width:1361px) and (max-width: 1680px)"
+                                srcset="./assets/images/logo/logo-430.png">
+                            <source media="(min-width:1281px)and (max-width: 1360px)"
+                                srcset="./assets/images/logo/logo-320.png">
+                            <source media="(min-width:769px) and (max-width: 1280px)"
+                                srcset="./assets/images/logo/logo-215.png">
+                            <source media="(min-width:481px) and (max-width: 768px)"
+                                srcset="./assets/images/logo/logo-180.png">
+                            <source media="(min-width:361px) and (max-width: 480px)"
+                                srcset="./assets/images/logo/logo-150.png">
+                            <source media="(min-width:0px) and (max-width: 360px)"
+                                srcset="./assets/images/logo/logo-100.png">
+                            <img src="./assets/images/logo/logo-630.png" alt="CCC awards 2020 winner logo">
+                        </picture>
+                    </a>
 
-      <h2 class="page-section-heading text-center text-secondary mb-4">Radio/Podcast</h2>
-			<p class="lead text-center font-weight-light mb-0">Produced, edited and narrated by Laila</p>
+                    <!-- nav-toggler for mobile version only -->
+                    <button class="nav-toggler d-lg-none-sm-block">
+                        <span></span>
+                    </button>
+                </div>
 
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
+                <!-- navbar links -->
+                <ul class="nav-links d-lg-flex-sm-block w-sm-100 justify-between">
+                    <li class="w-sm-100 text-sm-center"><a href="#about">about</a></li>
+                    <li class="w-sm-100 text-sm-center"><a href="#videos">videos</a></li>
+                    <li class="w-sm-100 text-sm-center"><a href="#blog">blog</a></li>
+                    <li class="w-sm-100 text-sm-center"><a href="#podcast">podcast</a></li>
+                    <li class="w-sm-100 text-sm-center"><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-      <div class="row">
+        <!-- about section goes here -->
+        <section id="about" class="sec main-color-bg w-100 section-padding d-lg-flex-md-block justify-between" data-aos="fade-up">
+            <figure class="photo mx-md-auto">
+                <picture>
+                    <source media="(min-width:1681px)" srcset="./assets/images/photo/photo-600.jpg">
+                    <source media="(min-width:1361px) and (max-width: 1680px)"
+                        srcset="./assets/images/photo/photo-320.jpg">
+                    <source media="(min-width:1281px)and (max-width: 1360px)"
+                        srcset="./assets/images/photo/photo-280.jpg">
+                    <source media="(min-width:769px) and (max-width: 1280px)"
+                        srcset="./assets/images/photo/photo-240.jpg">
+                    <source media="(min-width:481px) and (max-width: 768px)"
+                        srcset="./assets/images/photo/photo-200.jpg">
+                    <source media="(min-width:0) and (max-width: 480px)" srcset="./assets/images/photo/photo-170.jpg">
+                    <img class="w-100" src="./assets/images/photo/photo-600.jpg" alt="Laila Maiden photo">
+                </picture>
+            </figure>
+            <div class="info text-md-center w-sm-100 mx-md-auto">
+                <small class="sub-head">about me</small>
+                <h1>Laila Maiden</h1>
+                <p>Laila is a journalist who holds an extensive background in foreign policy and international
+                    relations. Her most recent work involved monitoring nuclear weapons negotiations and
+                    intergovernmental discussions on the weaponization of space and dual-purpose technology.</p>
+                <p>She is currently studying at the Craig Newmark Graduate School of Journalism where she is both
+                    specializing in economics and business reporting and training to cover the upcoming 2020
+                    presidential elections.</p>
+            </div>
+        </section>
 
-        <div class="col-md-6 col-lg-3">
-          <div class="portfolio-item mx-auto">
-						<p class="text-center font-weight-light mb-4">VoxPop</p>
-            <audio controls preload="metadata">
-							<source src="./wav/20190904_VoxPop_Hmaidan_1.wav" type="audio/wav">
-							Your browser does not support the audio element.
-						</audio>
-          </div>
-        </div>
 
-        <div class="col-md-6 col-lg-3">
-          <div class="portfolio-item mx-auto">
-						<p class="text-center font-weight-light mb-4">Voicer</p>
-						<audio controls preload="metadata">
-							<source src="./wav/20190909_voicer_Hmaidan_1.wav" type="audio/wav">
-							Your browser does not support the audio element.
-						</audio>
-          </div>
-        </div>
+        <main>
+            <!-- videos section goes here -->
+            <section id="videos" class="sec light-color-bg w-100 section-padding">
+                <div class="sec-head-wrapper text-center main-color" data-aos="fade-up">
+                    <small class="sub-head">meet me</small>
+                    <h2 class="head">on my channel</h2>
+                </div>
+                <div class="videos-wrapper d-flex-row flex-wrap">
+                    <div class="video-wrapper" data-aos="fade-up">
+                        <h3 class="text-center element-head">U.S. unemployment rate surged to highest in recorded history.</h3>
+                        <div class="youtube-player video w-md-100 video-img-after" data-id="zo5LItDWVaE" data-start="0">
+                        </div>
+                    </div>
+                    <div class="video-wrapper" data-aos="fade-up">
+                        <h3 class="text-center element-head">New York City, transportation, masks and COVID19</h3>
+                        <div class="youtube-player video w-md-100 video-img-after" data-id="dzWO3qoon_A" data-start="18">
+                        </div>
+                    </div>
+                    <div class="video-wrapper" data-aos="fade-up">
+                        <h3 class="text-center element-head">Refugee camps during COVID 19</h3>
+                        <div class="youtube-player video w-md-100 video-img-after" data-id="I4HzWj7Mq_Q" data-start="17">
+                        </div>
+                    </div>
+                    <div class="video-wrapper" data-aos="fade-up">
+                        <h3 class="text-center element-head">Africa during COVID 19</h3>
+                        <div class="youtube-player video w-md-100 video-img-after" data-id="6ixZeXS3ckA" data-start="14">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-pri cta mx-auto d-none mx-auto"><span>load more</span></button>
+            </section>
 
-        <div class="col-md-6 col-lg-3">
-          <div class="portfolio-item mx-auto">
-						<p class="text-center font-weight-light mb-4">Wrap</p>
-            <audio controls preload="metadata">
-							<source src="./wav/20190918_Wrap_Hmaidan_1.wav" type="audio/wav">
-							Your browser does not support the audio element.
-						</audio>
-          </div>
-        </div>
+            <!-- articles section goes here -->
+            <section id="blog" class="sec light-color-bg w-100 section-padding">
+                <div class="sec-head-wrapper text-center main-color" data-aos="fade-up">
+                    <small class="sub-head">read my latest</small>
+                    <h2 class="head">articles</h2>
+                </div>
+                <div class="blogs-wrapper d-flex-row justify-between">
+                    <div class="articles-wrapper w-md-100 mx-auto">
+                        <article class="d-lg-flex-md-block justify-between text-sm-center" data-aos="fade-up">
+                            <figure class="article-img w-md-100 mx-md-auto">
+                                <picture>
+                                    <source media="(min-width:1681px)" srcset="./assets/images/article1/article1.jpg">
+                                    <source media="(min-width:1281px) and (max-width: 1680px)"
+                                        srcset="./assets/images/article1/article1-310.jpg">
+                                    <source media="(min-width:769px) and (max-width: 1280px)"
+                                        srcset="./assets/images/article1/article1.jpg">
+                                    <source media="(min-width:0px) and (max-width: 768px)"
+                                        srcset="./assets/images/article1/article1-200.jpg">
+                                    <img class="w-100" src="./assets/images/article1/article1.jpg" alt="">
+                                </picture>
+                            </figure>
+                            <div class="article-info w-md-100">
+                                <div class="blog-article_head d-lg-flex-sm-block justify-between">
+                                    <h3><a href="http://bizeconreporting.journalism.cuny.edu/2020/05/26/trucking-takes-the-long-winding-road-downwards/"
+                                            target="_blank">Trucking
+                                            Takes The Long Winding Road Downwards</a></h3>
+                                    <time class="p" datetime="2020-05-26">26-05-2020</time>
+                                </div>
+                                <p>When COVID-19 first hit, Tali Haleua, founder of Fuelogistics from Salt Lake City,
+                                    Utah, thought he could get by for a few weeks covering expenses out of pocket, but
+                                    then the lockdowns dragged on. Eventually, he had to lay off all 10 of his
+                                    employees. Now his trucks are sitting idle and he isn’t sure what comes next.</p>
+                                <p>“Shippers were cutting their rate so low that it was less than what it cost us to
+                                    drive our trucks,” said Haleua.</p>
+                            </div>
+                        </article>
+                        <article class="d-lg-flex-md-block justify-between text-sm-center" data-aos="fade-up">
+                            <figure class="article-img w-md-100 mx-md-auto">
+                                <picture>
+                                    <source media="(min-width:1681px)" srcset="./assets/images/article2/article2.jpg">
+                                    <source media="(min-width:1281px) and (max-width: 1680px)"
+                                        srcset="./assets/images/article2/article2-310.jpg">
+                                    <source media="(min-width:769px) and (max-width: 1280px)"
+                                        srcset="./assets/images/article2/article2.jpg">
+                                    <source media="(min-width:0px) and (max-width: 768px)"
+                                        srcset="./assets/images/article2/article2-200.jpg">
+                                    <img class="w-100" src="./assets/images/article2/article2.jpg" alt="">
+                                </picture>
+                            </figure>
+                            <div class="article-info w-md-100">
+                                <div class="blog-article_head d-lg-flex-sm-block justify-between">
+                                    <h3><a href="http://bizeconreporting.journalism.cuny.edu/2020/04/04/us-manufacturing-takes-its-hardest-hit-since-2009/"
+                                            target="_blank">US
+                                            Manufacturing Takes Its Hardest Hit Since 2009</a></h3>
+                                    <time class="p" datetime="2020-04-04">04-04-2020</time>
+                                </div>
+                                <p>March’s Institute for Supply Management’s report on business declined to 49.1%, an
+                                    indication of contraction for the U.S. economy. The index, based on a survey of U.S.
+                                    manufacturing companies, was down a percentage point from February, with the
+                                    supplier deliveries index keeping the ISM higher than anticipated as it increased by
+                                    7.7% to 65% from the previous month. In contrast, the new orders index tumbled by
+                                    7.6% from the previous month to 44.2%. The employment index decreased by 3.1% from
+                                    February, registering at 43.8%.</p>
+                            </div>
+                        </article>
+                        <article class="d-lg-flex-md-block justify-between text-sm-center" data-aos="fade-up">
+                            <figure class="article-img w-md-100 mx-md-auto">
+                                <picture>
+                                    <source media="(min-width:1681px)" srcset="./assets/images/article3/article3.jpg">
+                                    <source media="(min-width:1281px) and (max-width: 1680px)"
+                                        srcset="./assets/images/article3/article3-310.jpg">
+                                    <source media="(min-width:769px) and (max-width: 1280px)"
+                                        srcset="./assets/images/article3/article3.jpg">
+                                    <source media="(min-width:0px) and (max-width: 768px)"
+                                        srcset="./assets/images/article3/article3-200.jpg">
+                                    <img class="w-100" src="./assets/images/article3/article3.jpg" alt="">
+                                </picture>
+                            </figure>
+                            <div class="article-info w-md-100">
+                                <div class="blog-article_head d-lg-flex-sm-block justify-between">
+                                    <h3><a href="./assets/articles/Amid_pandemic_to_open_or_not_is_not_the_only_question.pdf"
+                                            target="_blank">Amid
+                                            pandemic, to open or not is not the only question</a></h3>
+                                    <time class="p" datetime="2020-08-02">02-08-2020</time>
+                                </div>
+                                <p>I recently took a ight from one major city to another, and what I witnessed got me
+                                    thinking about all this talk on when and how to reopen the economy during the
+                                    coronavirus pandemic.</p>
+                                <p>I am a reporting intern for Crain's Detroit Business, working remotely from New York
+                                    City. When things got bad and New York shut down in mid-March, I ew home to Toronto
+                                    for a few months until cases declined, and then returned.</p>
+                            </div>
+                        </article>
+                        <article class="d-lg-flex-md-block justify-between text-sm-center" data-aos="fade-up">
+                            <figure class="article-img w-md-100 mx-md-auto">
+                                <picture>
+                                    <source media="(min-width:1681px)" srcset="./assets/images/article4/article4.jpg">
+                                    <source media="(min-width:1281px) and (max-width: 1680px)"
+                                        srcset="./assets/images/article4/article4-310.jpg">
+                                    <source media="(min-width:769px) and (max-width: 1280px)"
+                                        srcset="./assets/images/article4/article4.jpg">
+                                    <source media="(min-width:0px) and (max-width: 768px)"
+                                        srcset="./assets/images/article4/article4-200.jpg">
+                                    <img class="w-100" src="./assets/images/article4/article4.jpg" alt="">
+                                </picture>
+                            </figure>
+                            <div class="article-info w-md-100">
+                                <div class="blog-article_head d-lg-flex-sm-block justify-between">
+                                    <h3><a href="./assets/articles/MSU_student_running_at_full_speed_with_footwear_startup.pdf"
+                                            target="_blank">MSU
+                                            student running at full speed with footwear startup</a></h3>
+                                    <time class="p" datetime="2020-08-20">20-08-2020</time>
+                                </div>
+                                <p>Mustafa Syed was on a night jog in Ann Arbor when he found himself less than a foot
+                                    away from a vehicle that was moving at about 50 mph.</p>
+                                <p>More than 6,500 pedestrians were killed on U.S. roads last year, according to the
+                                    Governors Highway Safety Association.</p>
+                                <p>The college student's desire to come up with a solution led him to start Reza Inc. in
+                                    May 2019. </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <button class="btn-pri cta mx-auto d-none mx-auto"><span>read more</span></button>
+            </section>
 
-        <div class="col-md-6 col-lg-3">
-          <div class="portfolio-item mx-auto">
-						<p class="text-center font-weight-light mb-4">Non narrated</p>
-            <audio controls preload="metadata">
-							<source src="./wav/20190210_nonnarrated_Hmaidan_2.wav" type="audio/wav">
-							Your browser does not support the audio element.
-						</audio>
-          </div>
-        </div>
-      </div>
-      
+            <!-- podcast section -->
+            <section id="podcast" class="sec light-color-bg w-100 section-padding">
+                <div class="sec-head-wrapper text-center main-color" data-aos="fade-up">
+                    <small class="sub-head">listen to my</small>
+                    <h2 class="head">radio / podcast</h2>
+                </div>
+                <div class="audios-wrapper d-lg-flex-md-block flex-wrap" data-aos="fade-up">
+                    <div class="audio text-md-center w-md-100">
+                        <h3 class="text-center element-head">VoxPop</h3>
+                        <audio loading="lazy" controls="" preload="metadata">
+                            <source src="https://leilahmaidan.github.io/demoreel/wav/20190904_VoxPop_Hmaidan_1.wav"
+                                type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio text-md-center w-md-100">
+                        <h3 class="text-center element-head">Voicer</h3>
+                        <audio loading="lazy" controls="" preload="metadata">
+                            <source src="https://leilahmaidan.github.io/demoreel/wav/20190909_voicer_Hmaidan_1.wav"
+                                type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio text-md-center w-md-100">
+                        <h3 class="text-center element-head">Wrap</h3>
+                        <audio loading="lazy" controls="" preload="metadata">
+                            <source src="https://leilahmaidan.github.io/demoreel/wav/20190918_Wrap_Hmaidan_1.wav"
+                                type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio text-md-center w-md-100">
+                        <h3 class="text-center element-head">Non narrated</h3>
+                        <audio loading="lazy" controls="" preload="metadata">
+                            <source src="https://leilahmaidan.github.io/demoreel/wav/20190210_nonnarrated_Hmaidan_2.wav"
+                                type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <button class="btn-pri cta mx-auto d-none mx-auto"><span>load more</span></button>
+            </section>
+        </main>
+
+        <!-- contact section -->
+        <footer id="contact" class="main-color-bg w-100 section-padding" data-aos="fade-up">
+            <div class="sec-head-wrapper text-center">
+                <small class="sub-head">keep in touch</small>
+                <h2 class="head">contact me</h2>
+            </div>
+            <div class="contact-info d-lg-flex-md-block justify-center w-sm-100 mx-auto">
+                <p class="mx-md-auto d-flex-row">
+                    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                    <svg x="0px" y="0px" viewBox="0 0 91.981148 122.70935">
+                        <path id="path834"
+                            d="m 46.627446,122.62067 c -0.48415,-0.15259 -3.787594,-2.32222 -6.41085,-4.21051 C 26.693534,108.67588 15.435696,95.752494 8.4472636,81.940687 0.32050763,65.879122 -2.0620824,48.971444 1.8200656,34.91181 4.4056296,25.547904 9.7208236,17.42138 17.15459,11.466498 28.794301,2.1424091 42.396405,-1.6968714 55.32365,0.69303613 67.45647,2.9360754 78.796308,10.927401 85.216932,21.759207 c 3.341919,5.637926 5.373696,11.778514 6.427897,19.426868 0.446105,3.236557 0.448994,11.620112 0.0052,15.227965 -1.87555,15.24897 -7.932085,29.888905 -17.806954,43.043208 -6.547011,8.721262 -14.991889,16.572512 -23.549302,21.893902 -1.997199,1.24195 -2.834223,1.53178 -3.666373,1.26952 z m 3.887832,-53.431802 c 6.018991,-1.289259 11.265583,-4.807732 14.597967,-9.789699 1.736592,-2.596233 2.810532,-5.148529 3.47833,-8.266504 0.402025,-1.877066 0.446086,-6.845592 0.07728,-8.714269 -1.884177,-9.546767 -9.31751,-16.837695 -18.857759,-18.496488 -2.314484,-0.402427 -6.850256,-0.267352 -8.978338,0.267373 -4.411867,1.108574 -8.03294,3.135593 -11.091718,6.208964 -3.406755,3.423007 -5.656887,7.810728 -6.435296,12.548713 -0.417643,2.542091 -0.263426,6.571217 0.344914,9.011445 1.11227,4.461618 3.223762,8.125736 6.488996,11.260489 3.235314,3.106029 7.694397,5.365553 11.925425,6.042895 0.726189,0.116255 1.439174,0.240098 1.584412,0.275207 0.667515,0.161362 5.671819,-0.09238 6.865787,-0.348126 z" />
+                    </svg>
+
+                    <span>New York, NY</span>
+                </p>
+                <p class="mx-md-auto d-flex-row">
+                    <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 122.88 78.607" enable-background="new 0 0 122.88 78.607" xml:space="preserve">
+                        <g>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M61.058,65.992l24.224-24.221l36.837,36.836H73.673h-25.23H0l36.836-36.836 L61.058,65.992L61.058,65.992z M1.401,0l59.656,59.654L120.714,0H1.401L1.401,0z M0,69.673l31.625-31.628L0,6.42V69.673L0,69.673z M122.88,72.698L88.227,38.045L122.88,3.393V72.698L122.88,72.698z" />
+                        </g>
+                    </svg>
+                    <span>laila.hmaidan@journalism.cuny.edu</span>
+                </p>
+            </div>
+            <div class="social-links d-flex-row justify-center w-md-100 mx-auto">
+                <a href="https://twitter.com/lailamaiden?lang=en">
+                    <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                        text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                        clip-rule="evenodd" viewBox="0 0 640 640">
+                        <path
+                            d="M640.012 121.513c-23.528 10.524-48.875 17.516-75.343 20.634 27.118-16.24 47.858-41.977 57.756-72.615-25.347 14.988-53.516 25.985-83.363 31.866-24-25.5-58.087-41.35-95.848-41.35-72.508 0-131.21 58.736-131.21 131.198 0 10.228 1.134 20.232 3.355 29.882-109.1-5.528-205.821-57.757-270.57-137.222a131.423 131.423 0 0 0-17.764 66c0 45.497 23.102 85.738 58.347 109.207-21.508-.638-41.74-6.638-59.505-16.359v1.642c0 63.627 45.225 116.718 105.32 128.718-11.008 2.988-22.63 4.642-34.606 4.642-8.48 0-16.654-.874-24.78-2.35 16.783 52.11 65.233 90.095 122.612 91.205-44.989 35.245-101.493 56.233-163.09 56.233-10.63 0-20.988-.65-31.334-1.89 58.229 37.359 127.206 58.997 201.31 58.997 241.42 0 373.552-200.069 373.552-373.54 0-5.764-.13-11.35-.366-16.996 25.642-18.343 47.87-41.493 65.469-67.844l.059-.059z" />
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/channel/UCtJCrz6VlaNb4fdSD0Lp1ZQ"> <svg
+                        xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                        text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                        clip-rule="evenodd" viewBox="0 0 640 640">
+                        <path
+                            d="M633.468 192.038s-6.248-44.115-25.477-63.485c-24.366-25.477-51.65-25.642-64.123-27.118-89.493-6.52-223.904-6.52-223.904-6.52h-.236s-134.352 0-223.893 6.52c-12.52 1.523-39.768 1.63-64.123 27.118-19.24 19.37-25.358 63.485-25.358 63.485S-.012 243.806-.012 295.681v48.509c0 51.768 6.366 103.643 6.366 103.643s6.248 44.114 25.358 63.52c24.355 25.477 56.363 24.65 70.655 27.367 51.237 4.89 217.644 6.366 217.644 6.366s134.529-.237 224.022-6.638c12.52-1.477 39.756-1.63 64.123-27.119 19.24-19.37 25.476-63.532 25.476-63.532S640 396.03 640 344.154v-48.508c-.13-51.769-6.497-103.643-6.497-103.643l-.035.035zm-379.8 211.007V223.173L426.56 313.41l-172.892 89.635z" />
+                    </svg></a>
+            </div>
+        </footer>
+
+        <!-- copyright -->
+        <section id="copyright" class="text-center dark-color-bg">
+            <small class="p">Copyright &copy; Laila Maiden 2020</small>
+        </section>
     </div>
-  </section>
-
-  <section class="page-section bg-primary text-white mb-0" id="about">
-    <div class="container">
-
-      <h2 class="page-section-heading text-center text-white">Laila Maiden - Reel</h2>
-
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-			</div>
-
-			<div class="video-wrapper">
-				<iframe src="https://www.youtube.com/embed/ObHUyZ8p504" frameborder="0" allowfullscreen></iframe>
-			</div>
-
-    </div>
-  </section>
-
-  <section class="page-section bg-info text-white mb-0" id="about">
-    <div class="container">
-
-      <h2 class="page-section-heading text-center text-white">Produced, narrated and edited by Laila</h2>
-
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-			</div>
-			
-			<div class="video-wrapper">
-				<iframe src="https://www.youtube.com/embed/ComkBkJgtks" frameborder="0" allowfullscreen></iframe>
-			</div>
-
-    </div>
-  </section>
-
-  <section class="page-section bg-dark text-white mb-0" id="about">
-    <div class="container">
-
-      <h2 class="page-section-heading text-center text-white">Finance and data analytics</h2>
-      <p class="lead text-center font-weight-light mb-0"
-	     <p>
-Link <a href="https://bizeconreporting.journalism.cuny.edu/2020/03/05/februarys-ism-remained-in-expansion-while-early-signals-indicate-coronavirus-impact/" target="_blank">February’s ISM Remained in Expansion While Early Signals Indicate Coronavirus Impact</a> 
-	    </p>
-
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-			</div>
-
-    </div>
-  </section>
-
-  <footer class="footer text-center">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-6 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Location</h4>
-          <p class="lead mb-0">New York, NY</p>
-        </div>
-
-        <div class="col-lg-6 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Around the Web</h4>
-          <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/LailaMaiden">
-            <i class="fab fa-fw fa-twitter"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <section class="copyright py-4 text-center text-white">
-    <div class="container">
-      <small>Copyright &copy; Your Website 2020</small>
-    </div>
-  </section>
-
-  <div class="scroll-to-top d-lg-none position-fixed ">
-    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-      <i class="fa fa-chevron-up"></i>
-    </a>
-	</div>
-	
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-	
+    <!-- scripts -->
+    <script src="./assets/scripts/index.min.js"></script>
 </body>
 
 </html>
