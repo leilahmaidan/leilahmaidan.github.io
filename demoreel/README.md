@@ -2,7 +2,6 @@
 This documentation created to help in future editing to add or remove items on this website.
 
 - **[Files Organization](#files):** How to deal with files.
-- **[Page Speed](#speed):** Speed analysis.
 - **[About](#about):** How to edit the about section.
 - **[Videos](#videos):** How to add / remove video.
 - **[Articles](#articles):** How to add / remove article.
@@ -101,28 +100,6 @@ It's include:
 
 It's include all podcast files.
 
-## <a name="speed" target="_self">Page Speed</a>
-
-Speed analysis has been done on [https://biosite5.netlify.app/](https://biosite5.netlify.app/) and The results are as follows:
-
-### Pagespeed Insights from Google
-
-#### 1- For mobile
-
-![google speed analysis for mobile](./assets/documentation-assets/gs-mob.png)
-
-#### 2- For desktop
-
-![google speed analysis for desktop](./assets/documentation-assets/gs-comp.png)
-
-### Gtmetrix
-
-![Gtmetrix speed analysis](./assets/documentation-assets/Gtmetrix.png)
-
-## <a name="about" target="_self">About</a>
-
-If you want to update the about section, Then This will help you
-
 ### 1- update the photo
 
 - Prepare the photo (Portrait orientation). For page speed, You need these sizes:
@@ -159,6 +136,14 @@ If you want to update the about section, Then This will help you
 
 - First: Determine the video arrangement between the videos for the page
 - Then: copy this code `<div class="video-wrapper" data-aos="fade-up">
+                            <h3 class="text-center element-head">VIDEO_TITLE</h3>
+                            <div class="iframe-wrapper">
+                                <iframe src="https://www.youtube.com/embed/VIDEO_ID?rel=0&start=START_TIME"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                frameborder="0" allowfullscreen="1"></iframe>
+                            </div>
+                        </div>`
+`<div class="video-wrapper" data-aos="fade-up">
                         <h3 class="text-center element-head">VIDEO_TITLE</h3>
                         <div class="youtube-player video w-md-100 video-img-after" data-id="VIDEO_ID" data-start="0">
                         </div>
@@ -168,7 +153,7 @@ If you want to update the about section, Then This will help you
 
 ![How to get video id from youtube video url](./assets/documentation-assets/video-id.png)
 
-- If you want video to start in a specific second, replace the `0` in ` data-start="0"` with the specific second. Ex: ` data-start="16"`
+- If you want video to start in a specific second, replace the `START_TIME` in with the specific second. Ex: `16`
 - Finally: Past the code in the `index.html` document in the arrangment you determined before.
 
 ## <a name="articles" target="_self">Articles</a>
@@ -287,13 +272,13 @@ Note: It's preferred that the file name does not contain any spaces, but instead
                     `<div class="audio text-md-center w-md-100">
                         <h3 class="text-center element-head">PODCAST_TITLE</h3>
                         <audio loading="lazy" controls="" preload="metadata">
-                            <source src="https://leilahmaidan.github.io/demoreel/wav/PODCAST.wav"
+                            <source src="https://leilahmaidan.github.io/portfolio/wav/PODCAST.wav"
                                 type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </div>`
 - Replace `PODCAST_TITLE` with the podcatst title that you want. 
-- Replace `PODCAST` in `https://leilahmaidan.github.io/demoreel/wav/PODCAST.wav` with the audio name.
+- Replace `PODCAST` in `https://leilahmaidan.github.io/portfolio/wav/PODCAST.wav` with the audio name.
 
 Note 1: It's preferred that the file name does not contain any spaces, but instead `- `or `_`.
 Note 2: If the File extension not `wav`, then replace `.wav` with the file extension. Ex: `.mp3`.

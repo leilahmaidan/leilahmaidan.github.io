@@ -1,7 +1,5 @@
 'use strict';
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 (function () {
     // ------------------------------------
     // to add animation on scroll
@@ -21,75 +19,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             script2.innerHTML += 'setTimeout(() => {\n                AOS.init();\n            }, 1000);';
             document.body.appendChild(script2);
         });
-    }
-})();
-
-(function () {
-    // ------------------------------------
-    // to download youtube videos in speed way
-    // ------------------------------------
-    var videoList = void 0;
-    document.addEventListener("DOMContentLoaded", function () {
-        var div = void 0;
-        videoList = document.querySelectorAll(".youtube-player");
-        videoList.forEach(function (el, i) {
-            var v = document.createElement("div");
-            v.id = 'video_player' + i;
-            videoList[i].appendChild(v);
-            div = document.createElement("div");
-            div.className = "video-thumb";
-            div.setAttribute("data-id", videoList[i].dataset.id);
-
-            var img = document.createElement('img');
-            img.setAttribute('src', labnolThumb(videoList[i].dataset.id));
-            img.setAttribute('alt', '');
-            img.setAttribute('class', 'w-100');
-            div.appendChild(img);
-
-            div.onclick = labnolIframe;
-            videoList[i].appendChild(div);
-        });
-    });
-
-    function labnolThumb(id) {
-        return 'https://i.ytimg.com/vi/' + id + '/hqdefault.jpg';
-    }
-
-    function labnolIframe() {
-        // now on click on the thumb --> the behavour will be different on desktop or mobile
-        if (window.innerWidth <= 1279) {
-
-            // The API will call this function when the video player is ready.
-            var onPlayerReady = function onPlayerReady(event) {
-                event.target.mute();
-                event.target.playVideo();
-            };
-
-            // This function creates an <iframe> (and YouTube player)
-            //    after the API code downloads.
-            var player = void 0;
-            player = new YT.Player(this.parentNode.children[0].id, {
-                videoId: this.dataset.id,
-                playerVars: _defineProperty({ 'autoplay': 1, 'playsinline': 1, 'rel': 0, 'start': this.parentNode.dataset.start || 0 }, 'playsinline', 1),
-                events: {
-                    'onReady': onPlayerReady
-                }
-            });
-            this.remove();
-        } else {
-            var div = document.createElement("div");
-            div.classList.add('iframe-wrapper');
-
-            var iframe = document.createElement("iframe");
-            var embed = 'https://www.youtube.com/embed/' + this.dataset.id + '?rel=0&autoplay=1&start=' + (this.parentNode.dataset.start || 0);
-            iframe.setAttribute("src", embed);
-            iframe.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
-            iframe.setAttribute("frameborder", "0");
-            iframe.setAttribute("allowfullscreen", "1");
-
-            div.appendChild(iframe);
-            this.parentNode.replaceChild(div, this);
-        }
     }
 })();
 
